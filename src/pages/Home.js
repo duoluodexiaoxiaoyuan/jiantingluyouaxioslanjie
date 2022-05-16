@@ -13,7 +13,6 @@ export class Home extends Component {
     }
   }
   componentDidMount() {
-    console.log("你好世界");
     request("http://127.0.0.1:8080/api/register")
       .then((res) => {
         console.log(res);

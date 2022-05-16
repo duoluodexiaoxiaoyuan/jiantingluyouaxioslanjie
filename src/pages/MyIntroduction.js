@@ -7,7 +7,6 @@ export class MyIntroduction extends Component {
   static propTypes = {};
 
   componentDidMount() {
-    console.log("你是我的荣耀");
     request("http://127.0.0.1:8080/api/login")
       .then((res) => {
         console.log(res);
